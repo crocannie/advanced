@@ -7,6 +7,8 @@ $params = array_merge(
 );
 
 return [
+    'language'=>'en',
+// язык по умолчанию, на который будет перенаправлен пользователь в случае невозможности определения для него наиболее подходящего языка на основе данных предоставляемых его браузером.
     'id' => 'app-frontend',
     'basePath' => dirname(__DIR__),
     'bootstrap' => ['log'],
@@ -36,14 +38,6 @@ return [
         'errorHandler' => [
             'errorAction' => 'site/error',
         ],
-        /*
-        'urlManager' => [
-            'enablePrettyUrl' => true,
-            'showScriptName' => false,
-            'rules' => [
-            ],
-        ],
-        */
     ],
     'params' => $params,
 ];
